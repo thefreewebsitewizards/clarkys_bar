@@ -602,14 +602,58 @@ body {
     border-radius: 5px;
 }
 
-/* Update highlight images to show original size */
-.highlight-photo {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 400px;
-    object-fit: contain;
-    border-radius: 10px;
+/* Responsive Design for Highlights Section */
+@media (max-width: 768px) {
+    .highlights {
+        padding: 60px 0;
+    }
+    
+    .highlight-item {
+        flex-direction: column;
+        margin-bottom: 60px;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .highlight-item.reverse {
+        flex-direction: column;
+    }
+    
+    .highlight-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .highlight-content p {
+        font-size: 1rem;
+    }
+    
+    .highlight-photo {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .highlights {
+        padding: 40px 0;
+    }
+    
+    .highlight-item {
+        margin-bottom: 40px;
+        gap: 20px;
+    }
+    
+    .highlight-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .highlight-content p {
+        font-size: 0.95rem;
+    }
+    
+    .highlight-photo {
+        max-height: 200px;
+    }
 }
 
 /* Remove placeholder styling */
