@@ -538,7 +538,7 @@ body {
 }
 
 .instagram-link {
-    display: inline-flex;
+    display: block;
     align-items: center;
     gap: 8px;
     color: white;
